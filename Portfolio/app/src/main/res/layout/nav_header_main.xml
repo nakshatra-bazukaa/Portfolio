@@ -20,5 +20,6 @@
         android:text="NAKSHATRA"
         android:textColor="@color/nav_top_text1"
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:paddingTop="16dp"/>
 </LinearLayout>
