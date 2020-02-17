@@ -26,7 +26,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
-                    android:src="@drawable/IMG_20190208_115759"
+                    android:src="@drawable/img2"
                     app:civ_border_color="@color/colorAccent"
                     app:civ_border_width="6dp" />
             </LinearLayout>
@@ -40,38 +40,34 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_weight="0.05">
+                    android:gravity="center"
+                    android:layout_weight="1">
                     <Button
                         android:id="@+id/frag_about_btn_github"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:background="@drawable/ic_github_logo"
                         android:layout_margin="6dp"/>
                     <Button
                         android:id="@+id/frag_about_btn_linkedin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:background="@drawable/ic_linkedin"
                         android:layout_margin="6dp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="0.05">
                     <Button
                         android:id="@+id/frag_about_btn_instagram"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:background="@drawable/ic_instagram"
                         android:layout_margin="6dp"/>
                     <Button
                         android:id="@+id/frag_about_btn_facebook"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:background="@drawable/ic_facebook"
                         android:layout_margin="6dp"/>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -151,6 +147,8 @@
                     android:textColor="@color/colorContent"
                     android:textSize="25sp"
                     android:textStyle="bold"
+                    android:scrollbars="vertical"
+                    android:paddingBottom="30dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"

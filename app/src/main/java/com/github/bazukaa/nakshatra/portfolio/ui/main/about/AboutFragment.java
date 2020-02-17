@@ -8,9 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.bazukaa.nakshatra.portfolio.R;
 import com.github.bazukaa.nakshatra.portfolio.viewmodel.AboutViewModel;
@@ -26,7 +28,12 @@ public class AboutFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.about_fragment, container, false);
+        View aboutFragmentView = inflater.inflate(R.layout.about_fragment, container, false);
+
+        TextView philosophyTextView = aboutFragmentView.findViewById(R.id.frag_about_tv_philosophy);
+        philosophyTextView.setMovementMethod(new ScrollingMovementMethod());
+
+        return aboutFragmentView;
     }
 
     @Override
