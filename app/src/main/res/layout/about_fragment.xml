@@ -97,7 +97,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimary"
-                        android:background="@color/colorAccent"
+                        android:background="@drawable/button"
                         android:text="SEE MY WORK"
                         android:padding="6dp"
                         android:textSize="14sp"
