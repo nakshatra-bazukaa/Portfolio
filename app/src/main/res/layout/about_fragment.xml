@@ -99,6 +99,7 @@
                         android:textColor="@color/colorPrimary"
                         android:background="@drawable/button"
                         android:text="SEE MY WORK"
+                        android:elevation="8dp"
                         android:padding="6dp"
                         android:textSize="14sp"
                         android:fontFamily="sans-serif-medium"
