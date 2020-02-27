@@ -96,7 +96,7 @@
                     android:layout_margin="8dp"
                     android:paddingBottom="30dp"
                     android:fontFamily="sans-serif"
-                    android:gravity="center"
+                    android:gravity="center|left"
                     android:text="@string/timeline"
                     android:textColor="@color/colorContent"
                     android:textSize="25sp"

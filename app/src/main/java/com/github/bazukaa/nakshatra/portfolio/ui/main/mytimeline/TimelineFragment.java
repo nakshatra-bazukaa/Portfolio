@@ -3,7 +3,6 @@ package com.github.bazukaa.nakshatra.portfolio.ui.main.mytimeline;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.graphics.Color;
-import android.media.Image;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -18,7 +17,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.github.bazukaa.nakshatra.portfolio.R;
-import com.github.bazukaa.nakshatra.portfolio.ui.main.util.ImageSliderItem;
+import com.github.bazukaa.nakshatra.portfolio.ui.main.mytimeline.util.ImageSlider;
+import com.github.bazukaa.nakshatra.portfolio.ui.main.mytimeline.util.ImageSliderItem;
 import com.github.bazukaa.nakshatra.portfolio.viewmodel.TimelineViewModel;
 import com.ramotion.fluidslider.FluidSlider;
 import com.smarteist.autoimageslider.IndicatorAnimations;
@@ -92,7 +92,6 @@ public class TimelineFragment extends Fragment {
                     slider.setBubbleText("Vegeta");
 
                 }
-//                final String value = String.valueOf((int)(pos*100));
 
                 return Unit.INSTANCE;
             }
