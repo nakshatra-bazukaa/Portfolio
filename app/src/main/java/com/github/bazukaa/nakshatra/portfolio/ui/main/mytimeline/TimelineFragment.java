@@ -17,8 +17,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.github.bazukaa.nakshatra.portfolio.R;
-import com.github.bazukaa.nakshatra.portfolio.ui.main.mytimeline.util.ImageSlider;
-import com.github.bazukaa.nakshatra.portfolio.ui.main.mytimeline.util.ImageSliderItem;
+import com.github.bazukaa.nakshatra.portfolio.ui.main.util.ImageSlider;
+import com.github.bazukaa.nakshatra.portfolio.ui.main.util.ImageSliderItem;
 import com.github.bazukaa.nakshatra.portfolio.viewmodel.TimelineViewModel;
 import com.ramotion.fluidslider.FluidSlider;
 import com.smarteist.autoimageslider.IndicatorAnimations;
@@ -38,7 +38,6 @@ public class TimelineFragment extends Fragment {
     private TimelineViewModel mViewModel;
 
     private List<ImageSliderItem> mImageSliderItems = new ArrayList<>();
-
     private ImageSlider adapter;
 
     public static TimelineFragment newInstance() {
@@ -102,15 +101,14 @@ public class TimelineFragment extends Fragment {
         adapter = new ImageSlider(getActivity(), mImageSliderItems);
 
         sliderView.setSliderAdapter(adapter);
-
-        sliderView.setIndicatorAnimation(IndicatorAnimations.NONE); //set indicator animation by using SliderLayout.IndicatorAnimations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+        //set indicator animation by using SliderLayout.IndicatorAnimations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+        sliderView.setIndicatorAnimation(IndicatorAnimations.NONE);
         sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_RIGHT);
         sliderView.setIndicatorSelectedColor(Color.WHITE);
         sliderView.setIndicatorUnselectedColor(Color.GRAY);
         sliderView.setScrollTimeInSec(4); //set scroll delay in seconds :
         sliderView.startAutoCycle();
         return timelineFragmentView;
-
     }
 
     @Override
