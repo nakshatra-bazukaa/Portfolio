@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.main.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/act_main_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"
+        app:tabTextColor="@color/colorAccent">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabTimeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIMELINE"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabProjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROJECTS"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabGithub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GITHUB"/>
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/act_main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act_main_tabLayout"></androidx.viewpager.widget.ViewPager>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
