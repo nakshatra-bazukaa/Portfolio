@@ -26,7 +26,7 @@
                     android:id="@+id/frag_about_civ_profile"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="16dp"
+                    android:layout_marginStart="16dp"
                     android:src="@drawable/img2"
                     app:civ_border_color="@color/colorAccent"
                     app:civ_border_width="6dp" />
@@ -36,7 +36,8 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="1"
-                android:layout_margin="16dp">
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -45,26 +46,26 @@
                     android:layout_weight="1">
                     <Button
                         android:id="@+id/frag_about_btn_github"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
                         android:background="@drawable/ic_github_logo"
                         android:layout_margin="6dp"/>
                     <Button
                         android:id="@+id/frag_about_btn_linkedin"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
                         android:background="@drawable/ic_linkedin"
                         android:layout_margin="6dp"/>
                     <Button
                         android:id="@+id/frag_about_btn_instagram"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
                         android:background="@drawable/ic_instagram"
                         android:layout_margin="6dp"/>
                     <Button
                         android:id="@+id/frag_about_btn_facebook"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
                         android:background="@drawable/ic_facebook"
                         android:layout_margin="6dp"/>
                 </LinearLayout>
@@ -73,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_weight="0.15">
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/frag_about_tv_name"
