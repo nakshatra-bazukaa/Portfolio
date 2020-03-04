@@ -30,8 +30,8 @@ public class PageAdapter extends FragmentPagerAdapter {
                 return new TimelineFragment();
             case 2:
                 return new ProjectsFragment();
-            case 3:
-                return new GithubFragment();
+//            case 3:
+//                return new GithubFragment();
             default:
                 return null;
         }

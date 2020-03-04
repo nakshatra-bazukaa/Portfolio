@@ -33,11 +33,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PROJECTS"/>
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabGithub"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GITHUB"/>
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabGithub"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="GITHUB"/>-->
     </com.google.android.material.tabs.TabLayout>
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/act_main_viewPager"

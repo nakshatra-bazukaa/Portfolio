@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
         TabItem tabAbout = findViewById(R.id.tabAbout);
         TabItem tabTimeline = findViewById(R.id.tabTimeline);
         TabItem tabProjects = findViewById(R.id.tabProjects);
-        TabItem tabGithub = findViewById(R.id.tabGithub);
+//        TabItem tabGithub = findViewById(R.id.tabGithub);
 
         final ViewPager viewPager = findViewById(R.id.act_main_viewPager);
 
