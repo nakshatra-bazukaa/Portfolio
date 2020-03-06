@@ -1,10 +1,12 @@
 package com.github.bazukaa.nakshatra.portfolio.ui.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.github.bazukaa.nakshatra.portfolio.R;
 import com.github.bazukaa.nakshatra.portfolio.ui.main.about.AboutFragment;
 import com.github.bazukaa.nakshatra.portfolio.ui.main.util.PageAdapter;
+import com.github.bazukaa.nakshatra.portfolio.ui.setup.Setup;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -133,13 +135,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_tools) {
+        if (id == R.id.nav_setup) {
+            Intent i = new Intent(MainActivity.this, Setup.class);
+            startActivity(i);
+            finish();
 
         } else if (id == R.id.nav_share) {
 
