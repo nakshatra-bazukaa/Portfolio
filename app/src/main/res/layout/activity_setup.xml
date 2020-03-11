@@ -28,7 +28,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_margin="16dp"
-            android:src="@mipmap/ic_add"
+            android:src="@mipmap/ic_add_profile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/act_setup_tv_about"></de.hdodenhof.circleimageview.CircleImageView>
@@ -138,6 +138,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/act_setup_et_facebook"></TextView>
+        <LinearLayout
+            android:id="@+id/act_setup_ll_timeline"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/act_setup_tv_timeline">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/act_setup_rv_timeline"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="4dp"
+                tools:listitem="@layout/timeline_card"
+                android:orientation="horizontal"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/act_setup_btn_timeline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_add_button"
+                android:layout_weight="1"/>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/act_setup_tv_projects"
@@ -148,7 +174,36 @@
             android:textColor="@color/colorAccent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/act_setup_tv_timeline"></TextView>
+            app:layout_constraintTop_toBottomOf="@id/act_setup_ll_timeline"></TextView>
+        <LinearLayout
+            android:id="@+id/act_setup_ll_project"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/act_setup_tv_projects">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/act_setup_rv_projects"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="4dp"
+                tools:listitem="@layout/setup_project_card"
+                android:orientation="horizontal"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/act_setup_btn_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_add_button"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

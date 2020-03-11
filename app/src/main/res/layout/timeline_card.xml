@@ -16,19 +16,20 @@
         android:background="@color/colorPrimary">
         <ImageView
             android:id="@+id/card_timeline_img_timeline"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:src="@mipmap/ic_add"
+            android:src="@mipmap/ic_add_profile_round"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/card_timeline_tv_title"/>
         <TextView
             android:id="@+id/card_timeline_tv_title"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
-            android:text="add"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="4dp"
+            android:text="Timeline Title"
             android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
