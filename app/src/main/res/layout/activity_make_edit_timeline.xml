@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.setup.makeEditTimeline.MakeEditTimelineActivity">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/act_mk_edt_tv_timeline"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="32dp"
+           android:text="TIMELINE"
+           android:textColor="@color/colorAccent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"></TextView>
+
+       <EditText
+           android:id="@+id/act_mk_edt_et_timeline_title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="16dp"
+           android:background="@color/colorAccent"
+           android:hint="Title"
+           android:textColor="@color/colorPrimary"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/act_mk_edt_tv_timeline"></EditText>
+       <EditText
+           android:id="@+id/act_mk_edt_et_timeline_description"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="16dp"
+           android:background="@color/colorAccent"
+           android:hint="Description"
+           android:textColor="@color/colorPrimary"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/act_mk_edt_et_timeline_title"></EditText>
+       <LinearLayout
+           android:id="@+id/act_mk_edt_ll_timeline_duration"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/act_mk_edt_et_timeline_description"
+           >
+           <EditText
+               android:id="@+id/act_mk_edt_et_timeline_start_duration"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="16dp"
+               android:background="@color/colorAccent"
+               android:hint="January 2020"
+               android:textColor="@color/colorPrimary"
+               android:layout_weight="1"
+              ></EditText>
+           <EditText
+               android:id="@+id/act_mk_edt_et_timeline_end_duration"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="16dp"
+               android:background="@color/colorAccent"
+               android:hint="Ongoing"
+               android:textColor="@color/colorPrimary"
+               android:layout_weight="1"
+               ></EditText>
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/act_mk_edt_ll_timeline"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_margin="16dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/act_mk_edt_ll_timeline_duration">
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/act_mk_edt_rv_timeline"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:layout_margin="4dp"
+               tools:listitem="@layout/timeline_card"
+               android:orientation="horizontal"
+               android:layout_weight="1" />
+           <Button
+               android:id="@+id/act_mk_edt_btn_add_timeline"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="4dp"
+               android:background="@drawable/ic_add_button"
+               android:layout_weight="1"/>
+       </LinearLayout>
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
