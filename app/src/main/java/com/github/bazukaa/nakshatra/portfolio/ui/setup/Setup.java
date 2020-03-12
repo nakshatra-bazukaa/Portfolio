@@ -26,6 +26,9 @@ import butterknife.OnClick;
 
 public class Setup extends AppCompatActivity {
 
+    public static final int ADD_TIMELINE_REQUEST = 1;
+    public static final int ADD_PROJECT_REQUEST = 2;
+
     private List<Project> mProjects = new ArrayList<>();
     private List<Timeline> mTimelines = new ArrayList<>();
 
@@ -91,15 +94,13 @@ public class Setup extends AppCompatActivity {
     @OnClick(R.id.act_setup_btn_timeline)
     public void onAddTimelineButtonClick(){
         Intent timelineIntent = new Intent(Setup.this, MakeEditTimelineActivity.class);
-        timelineIntent.putExtra("ADD", "Add Timeline");
-        timelineIntent.putExtra("ID", 1);
+        timelineIntent.putExtra(MakeEditTimelineActivity.ADD_REQUEST, ADD_TIMELINE_REQUEST);
         startActivity(timelineIntent);
     }
     @OnClick(R.id.act_setup_btn_project)
     public void onAddProjectButtonClick(){
         Intent projectIntent = new Intent(Setup.this, MakeEditTimelineActivity.class);
-        projectIntent.putExtra("ADD", "Add Project");
-        projectIntent.putExtra("ID", 2);
+        projectIntent.putExtra(MakeEditTimelineActivity.ADD_REQUEST, ADD_PROJECT_REQUEST);
         startActivity(projectIntent);
     }
 }

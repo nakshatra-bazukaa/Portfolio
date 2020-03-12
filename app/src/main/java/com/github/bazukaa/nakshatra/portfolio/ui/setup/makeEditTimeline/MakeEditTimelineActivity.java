@@ -9,11 +9,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.github.bazukaa.nakshatra.portfolio.R;
+import com.github.bazukaa.nakshatra.portfolio.ui.setup.Setup;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MakeEditTimelineActivity extends AppCompatActivity {
+
+    public static final String ADD_REQUEST = "com.github.bazukaa.nakshatra.portfolio.ui.setup.makeEditTimeline.ADD_REQUEST";
 
     @BindView(R.id.act_mk_edt_tv_timeline)
     TextView typeTitleTv;
@@ -27,19 +30,21 @@ public class MakeEditTimelineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_edit_timeline);
         ButterKnife.bind(this);
-
-        Intent i = getIntent();
-        String requestType = i.getStringExtra("ADD");
-        Integer requestId = i.getIntExtra("ID",-1);
-
-        getSupportActionBar().setTitle(requestType);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        if(requestId == 1){
+        //Preparing to Extract info. from intent
+        Intent i = getIntent();
+
+        //Processing the intent
+        Integer request = i.getIntExtra(ADD_REQUEST,-1);
+
+        if(request == Setup.ADD_TIMELINE_REQUEST){
+            getSupportActionBar().setTitle("Add Timeline");
             typeTitleTv.setText("Timeline");
             startDuration.setHint("2020");
             endDuration.setVisibility(View.INVISIBLE);
         }else{
+            getSupportActionBar().setTitle("Add Project");
             typeTitleTv.setText("Project");
         }
     }
