@@ -56,6 +56,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/act_setup_et_profile"></EditText>
+        <EditText
+            android:id="@+id/act_setup_et_phisolophy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:hint="My Philosophy"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/act_setup_et_designation"></EditText>
+
 
         <TextView
             android:id="@+id/act_setup_tv_links"
@@ -66,7 +78,7 @@
             android:textColor="@color/colorAccent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/act_setup_et_designation"></TextView>
+            app:layout_constraintTop_toBottomOf="@id/act_setup_et_phisolophy"></TextView>
 
         <EditText
             android:id="@+id/act_setup_et_email"
