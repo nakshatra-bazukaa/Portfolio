@@ -6,21 +6,23 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.github.bazukaa.nakshatra.portfolio.models.Timeline;
 import com.github.bazukaa.nakshatra.portfolio.models.User;
+
 import java.util.List;
 
 @Dao
-public interface UserDao {
-
+public interface TimelineDao {
     @Insert
-    void insert(User user);
+    void insert(Timeline timeline);
 
     @Delete
-    void delete(User user);
+    void delete(Timeline timeline);
 
     @Update
-    void update(User user);
+    void update(Timeline timeline);
 
-    @Query("SELECT * FROM user_table ORDER BY id DESC")
-    LiveData<List<User>> getUsers();
+    @Query("SELECT * FROM timeline_table ORDER BY id DESC")
+    LiveData<List<Timeline>> getTimelines();
 }

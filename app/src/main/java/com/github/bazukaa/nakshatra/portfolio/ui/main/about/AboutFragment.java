@@ -66,9 +66,6 @@ public class AboutFragment extends Fragment {
     private String instagramUrl = "https://www.instagram.com/nakshatra_bazukaa/";
     private String facebookUrl = "https://www.facebook.com/nakshatra.gupta.90";
 
-
-
-
     public static AboutFragment newInstance() {
         return new AboutFragment();
     }
@@ -83,12 +80,7 @@ public class AboutFragment extends Fragment {
         philosophyTextView.setMovementMethod(new ScrollingMovementMethod());
 
         //To handle seeMyWorkButton Click
-        seeMyWorkButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mCallback.onSeeMyWorkClicked();
-            }
-        });
+        seeMyWorkButton.setOnClickListener(view -> mCallback.onSeeMyWorkClicked());
 
         return aboutFragmentView;
     }

@@ -2,6 +2,8 @@ package com.github.bazukaa.nakshatra.portfolio.viewmodel;
 
 import androidx.lifecycle.ViewModel;
 
-public class ProjectsViewModel extends ViewModel {
+import com.github.bazukaa.nakshatra.portfolio.viewmodelhelper.ProjectsViewModelHelper;
+
+public class ProjectsViewModel extends ViewModel implements ProjectsViewModelHelper {
     // TODO: Implement the ViewModel
 }

@@ -16,7 +16,6 @@ import android.view.ViewGroup;
 
 import com.github.bazukaa.nakshatra.portfolio.R;
 import com.github.bazukaa.nakshatra.portfolio.ui.main.util.ImageSliderItem;
-import com.github.bazukaa.nakshatra.portfolio.ui.main.projects.util.Project;
 import com.github.bazukaa.nakshatra.portfolio.ui.main.projects.util.ProjectsAdapter;
 import com.github.bazukaa.nakshatra.portfolio.viewmodel.ProjectsViewModel;
 

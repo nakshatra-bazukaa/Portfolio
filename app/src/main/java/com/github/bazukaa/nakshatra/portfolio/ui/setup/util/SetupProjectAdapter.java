@@ -10,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.bazukaa.nakshatra.portfolio.R;
-import com.github.bazukaa.nakshatra.portfolio.ui.main.projects.util.Project;
 
 import java.util.ArrayList;
 import java.util.List;

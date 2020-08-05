@@ -6,21 +6,24 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.github.bazukaa.nakshatra.portfolio.models.Project;
 import com.github.bazukaa.nakshatra.portfolio.models.User;
+
 import java.util.List;
 
 @Dao
-public interface UserDao {
+public interface ProjectDao {
 
     @Insert
-    void insert(User user);
+    void insert(Project project);
 
     @Delete
-    void delete(User user);
+    void delete(Project project);
 
     @Update
-    void update(User user);
+    void update(Project project);
 
-    @Query("SELECT * FROM user_table ORDER BY id DESC")
-    LiveData<List<User>> getUsers();
+    @Query("SELECT * FROM project_table ORDER BY id DESC")
+    LiveData<List<Project>> getProjects();
 }
